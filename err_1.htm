@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta nameE="robots" contentT="noindex,nofollow">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+    <title>遠隔操作PCシステム</title>
+    <script type="text/javascript">
+<!--
+min=5;
+function init() {
+	var querys=location.search;
+	if(querys) {
+		var q = querys.replace(/^\?/,'').split('&');
+		for(i=0 ; i<q.length ; i++){
+			var pair=q[i].split('=');
+			min=pair[1];
+		}
+	}
+	backTimer(min);
+}
+window.onload= init;
+//-->
+	</script>
+  </head>
+  <body>
+  	<!-- 通信部品 -->
+	<applet code="WSCom.class" codebase="/PARTS/" width="0" height="0">
+    	<param name="INTERVAL" value="1">
+	</applet>
+  	<div id="content">
+  		<div id="inner">
+		    <table id="top">
+		    	<tr>
+		    		<td id="icon" width="120">
+		    			<img src="monitor_img/gaishi.png">
+		    		</td>
+		    		<td id="title" width="760">
+			    		<span id="subtitle">さいたま鉄道　目視検査装置制御盤</span><br>
+		    			<span id="title">遠隔操作PCシステム</span>
+		    		</td>
+		    		<td id="loco" width="150">
+		    			<img src="monitor_img/sl.png">
+		    		</td>
+		    	</tr>
+		    </table>
+		    <table id="content_tbl">
+		    	<tr>
+		    		<td colspan="4" class="cap">
+		    		    ■ 異常モニタ1
+				    </td>
+				</tr>
+		    	<tr>
+		    		<td class="content_td">
+		    		    <!-- 図形表示部品 -->
+					    <applet code="WSPictur.class" codebase="/PARTS/" width="155" height="60">
+					      <param name="TAGNO" value="1">
+					      <param name="ELMNO" value="35">
+					      <param name="DEFPICTURE" value="monitor_img/no_stop.jpg">
+					      <param name="RANGENO" value="1">
+					      <param name="LOW1" value="1">
+					      <param name="HIGH1" value="2">
+					      <param name="PICTURE1" value="monitor_img/stop.jpg">
+					      <param name="APLCOLOR" value="Black">
+					    </applet>
+		    		</td>
+		    		<td class="content_td">
+		    		    <!-- 図形表示部品 -->
+					    <applet code="WSPictur.class" codebase="/PARTS/" width="155" height="60">
+					      <param name="TAGNO" value="1">
+					      <param name="ELMNO" value="36">
+					      <param name="DEFPICTURE" value="monitor_img/no_trip.jpg">
+					      <param name="RANGENO" value="1">
+					      <param name="LOW1" value="1">
+					      <param name="HIGH1" value="2">
+					      <param name="PICTURE1" value="monitor_img/trip.jpg">
+					      <param name="APLCOLOR" value="Black">
+					    </applet>
+		    		</td>
+		    		<td class="content_td">
+		    		    <!-- 図形表示部品 -->
+					    <applet code="WSPictur.class" codebase="/PARTS/" width="155" height="60">
+					      <param name="TAGNO" value="1">
+					      <param name="ELMNO" value="37">
+					      <param name="DEFPICTURE" value="monitor_img/no_entrance.jpg">
+					      <param name="RANGENO" value="1">
+					      <param name="LOW1" value="1">
+					      <param name="HIGH1" value="2">
+					      <param name="PICTURE1" value="monitor_img/entrance.jpg">
+					      <param name="APLCOLOR" value="Black">
+					    </applet>
+		    		</td>
+		    		<td></td>
+		    	</tr>
+		    	<tr>
+		    		<td class="content_td">
+		    		    <!-- 図形表示部品 -->
+					    <applet code="WSPictur.class" codebase="/PARTS/" width="155" height="60">
+					      <param name="TAGNO" value="1">
+					      <param name="ELMNO" value="38">
+					      <param name="DEFPICTURE" value="monitor_img/no_difference.jpg">
+					      <param name="RANGENO" value="1">
+					      <param name="LOW1" value="1">
+					      <param name="HIGH1" value="2">
+					      <param name="PICTURE1" value="monitor_img/difference.jpg">
+					      <param name="APLCOLOR" value="Black">
+					    </applet>
+		    		</td>
+		    		<td class="content_td">
+		    		    <!-- 図形表示部品 -->
+					    <applet code="WSPictur.class" codebase="/PARTS/" width="155" height="60">
+					      <param name="TAGNO" value="1">
+					      <param name="ELMNO" value="39">
+					      <param name="DEFPICTURE" value="monitor_img/no_header.jpg">
+					      <param name="RANGENO" value="1">
+					      <param name="LOW1" value="1">
+					      <param name="HIGH1" value="2">
+					      <param name="PICTURE1" value="monitor_img/header.jpg">
+					      <param name="APLCOLOR" value="Black">
+					    </applet>
+		    		</td>
+		    		<td class="content_td">
+		    		    <!-- 図形表示部品 -->
+					    <applet code="WSPictur.class" codebase="/PARTS/" width="155" height="60">
+					      <param name="TAGNO" value="1">
+					      <param name="ELMNO" value="40">
+					      <param name="DEFPICTURE" value="monitor_img/no_press.jpg">
+					      <param name="RANGENO" value="1">
+					      <param name="LOW1" value="1">
+					      <param name="HIGH1" value="2">
+					      <param name="PICTURE1" value="monitor_img/press.jpg">
+					      <param name="APLCOLOR" value="Black">
+					    </applet>
+		    		</td>
+		    		<td></td>
+		    	</tr>
+		    	<tr>
+		    		<td class="content_td button">
+					    <!-- 書き込みボタン部品 -->
+					    <applet code="WSWrtbtn.class" codebase="/PARTS/" width="100" height="50">
+					      <param name="TAGNO" value="2">
+					      <param name="ELMNO" value="7">
+					      <param name="DATA" value="1">
+					      <param name="TYPE" value="0">
+					      <param name="CAPTION" value="異常確認">
+					      <param name="FONTSIZE" value="16">
+					      <param name="BTNCOLOR" value="White">
+					      <param name="APLCOLOR" value="Black">
+					      <param name="CONFIRM" value="1">
+					      <param name="LANGUAGE" value="0">
+					    </applet>
+		    		</td>
+		    		<td></td>
+		    		<td></td>
+		    		<td></td>
+		    	</tr>
+		    	<tr>
+		    		<td colspan="4">　</td>
+		    	</tr>
+		    	<tr>
+		    		<td></td>
+		    		<td></td>
+		    		<td></td>
+		    		<td class="back">
+						<a href="#" onClick="movePage('menu.htm', min)">戻る</a>
+		    		</td>
+		    	</tr>
+			</table>
+		</div>
+	    <div id="foot">2015 &copy All rights reserved.</div>
+    </div>
+  </body>
+</html>

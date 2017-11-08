@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta nameE="robots" contentT="noindex,nofollow">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+    <title>遠隔操作PCシステム</title>
+    <script type="text/javascript">
+<!--
+min=5;
+function init() {
+	var querys=location.search;
+	if(querys) {
+		var q = querys.replace(/^\?/,'').split('&');
+		for(i=0 ; i<q.length ; i++){
+			var pair=q[i].split('=');
+			min=pair[1];
+		}
+	}
+	backTimer(min);
+}
+window.onload= init;
+//-->
+	</script>
+  </head>
+  <body>
+  	<!-- 通信部品 -->
+	<applet code="WSCom.class" codebase="/PARTS/" width="0" height="0">
+    	<param name="INTERVAL" value="1">
+	</applet>
+  	<div id="content">
+  		<div id="inner">
+		    <table id="top">
+		    	<tr>
+		    		<td id="icon" width="120">
+		    			<img src="monitor_img/gaishi.png">
+		    		</td>
+		    		<td id="title" width="760">
+			    		<span id="subtitle">さいたま鉄道　目視検査装置制御盤</span><br>
+		    			<span id="title">遠隔操作PCシステム</span>
+		    		</td>
+		    		<td id="loco" width="150">
+		    			<img src="monitor_img/sl.png">
+		    		</td>
+		    	</tr>
+		    </table>
+		    <table id="content_tbl">
+		    	<tr>
+		    		<td colspan="3" class="cap">
+		    		    ■ 運転画面
+				    </td>
+				</tr>
+		    	<tr>
+		    		<td class="round_lamp">
+		    		    <!-- 図形表示部品 -->
+					    <applet code="WSPictur.class" codebase="/PARTS/" width="60" height="60">
+					      <param name="TAGNO" value="1">
+					      <param name="ELMNO" value="1">
+					      <param name="DEFPICTURE" value="monitor_img/gray.jpg">
+					      <param name="RANGENO" value="1">
+					      <param name="LOW1" value="1">
+					      <param name="HIGH1" value="2">
+					      <param name="PICTURE1" value="monitor_img/green.jpg">
+					      <param name="APLCOLOR" value="Black">
+					    </applet>
+				    </td>
+				    <td class="content_td">
+					    <!-- 書き込みボタン部品 -->
+					    <applet code="WSWrtbtn.class" codebase="/PARTS/" width="100" height="50">
+					      <param name="TAGNO" value="2">
+					      <param name="ELMNO" value="1">
+					      <param name="DATA" value="1">
+					      <param name="TYPE" value="0">
+					      <param name="CAPTION" value="予熱運転">
+					      <param name="FONTSIZE" value="16">
+					      <param name="BTNCOLOR" value="White">
+					      <param name="APLCOLOR" value="Black">
+					      <param name="CONFIRM" value="1">
+					      <param name="LANGUAGE" value="0">
+					    </applet>
+		    		</td>
+		    		<td>
+		    		</td>
+		    	</tr>
+		    	<tr>
+		    		<td class="round_lamp">
+		    		    <!-- 図形表示部品 -->
+					    <applet code="WSPictur.class" codebase="/PARTS/" width="60" height="60">
+					      <param name="TAGNO" value="1">
+					      <param name="ELMNO" value="2">
+					      <param name="DEFPICTURE" value="monitor_img/gray.jpg">
+					      <param name="RANGENO" value="1">
+					      <param name="LOW1" value="1">
+					      <param name="HIGH1" value="2">
+					      <param name="PICTURE1" value="monitor_img/green.jpg">
+					      <param name="APLCOLOR" value="Black">
+					    </applet>
+				    </td>
+				    <td class="content_td">
+					    <!-- 書き込みボタン部品 -->
+					    <applet code="WSWrtbtn.class" codebase="/PARTS/" width="100" height="50">
+					      <param name="TAGNO" value="2">
+					      <param name="ELMNO" value="2">
+					      <param name="DATA" value="1">
+					      <param name="TYPE" value="0">
+					      <param name="CAPTION" value="自動ﾓｰﾄﾞ1">
+					      <param name="FONTSIZE" value="16">
+					      <param name="BTNCOLOR" value="White">
+					      <param name="APLCOLOR" value="Black">
+					      <param name="CONFIRM" value="1">
+					      <param name="LANGUAGE" value="0">
+					    </applet>
+		    		</td>
+		    		<td>
+		    		</td>
+		    	</tr>
+		    	<tr>
+		    		<td class="round_lamp">
+		    		    <!-- 図形表示部品 -->
+					    <applet code="WSPictur.class" codebase="/PARTS/" width="60" height="60">
+					      <param name="TAGNO" value="1">
+					      <param name="ELMNO" value="3">
+					      <param name="DEFPICTURE" value="monitor_img/gray.jpg">
+					      <param name="RANGENO" value="1">
+					      <param name="LOW1" value="1">
+					      <param name="HIGH1" value="2">
+					      <param name="PICTURE1" value="monitor_img/green.jpg">
+					      <param name="APLCOLOR" value="Black">
+					    </applet>
+				    </td>
+				    <td class="content_td">
+					    <!-- 書き込みボタン部品 -->
+					    <applet code="WSWrtbtn.class" codebase="/PARTS/" width="100" height="50">
+					      <param name="TAGNO" value="2">
+					      <param name="ELMNO" value="3">
+					      <param name="DATA" value="1">
+					      <param name="TYPE" value="0">
+					      <param name="CAPTION" value="自動ﾓｰﾄﾞ2">
+					      <param name="FONTSIZE" value="16">
+					      <param name="BTNCOLOR" value="White">
+					      <param name="APLCOLOR" value="Black">
+					      <param name="CONFIRM" value="1">
+					      <param name="LANGUAGE" value="0">
+					    </applet>
+		    		</td>
+		    		<td>
+		    		</td>
+		    	</tr>
+		    	<tr>
+		    		<td class="round_lamp">
+		    		    <!-- 図形表示部品 -->
+					    <applet code="WSPictur.class" codebase="/PARTS/" width="60" height="60">
+					      <param name="TAGNO" value="1">
+					      <param name="ELMNO" value="4">
+					      <param name="DEFPICTURE" value="monitor_img/gray.jpg">
+					      <param name="RANGENO" value="1">
+					      <param name="LOW1" value="1">
+					      <param name="HIGH1" value="2">
+					      <param name="PICTURE1" value="monitor_img/green.jpg">
+					      <param name="APLCOLOR" value="Black">
+					    </applet>
+				    </td>
+				    <td class="content_td">
+					    <!-- 書き込みボタン部品 -->
+					    <applet code="WSWrtbtn.class" codebase="/PARTS/" width="100" height="50">
+					      <param name="TAGNO" value="2">
+					      <param name="ELMNO" value="4">
+					      <param name="DATA" value="1">
+					      <param name="TYPE" value="0">
+					      <param name="CAPTION" value="乾燥運転">
+					      <param name="FONTSIZE" value="16">
+					      <param name="BTNCOLOR" value="White">
+					      <param name="APLCOLOR" value="Black">
+					      <param name="CONFIRM" value="1">
+					      <param name="LANGUAGE" value="0">
+					    </applet>
+		    		</td>
+		    		<td>
+		    		</td>
+		    	</tr>
+		    	<tr>
+		    		<td class="round_lamp">
+		    		    <!-- 図形表示部品 -->
+					    <applet code="WSPictur.class" codebase="/PARTS/" width="60" height="60">
+					      <param name="TAGNO" value="1">
+					      <param name="ELMNO" value="52">
+					      <param name="DEFPICTURE" value="monitor_img/gray.jpg">
+					      <param name="RANGENO" value="1">
+					      <param name="LOW1" value="1">
+					      <param name="HIGH1" value="2">
+					      <param name="PICTURE1" value="monitor_img/red.jpg">
+					      <param name="APLCOLOR" value="Black">
+					    </applet>
+				    </td>
+				    <td class="content_td">
+					    <!-- 書き込みボタン部品 -->
+					    <applet code="WSWrtbtn.class" codebase="/PARTS/" width="100" height="50">
+					      <param name="TAGNO" value="2">
+					      <param name="ELMNO" value="5">
+					      <param name="DATA" value="1">
+					      <param name="TYPE" value="0">
+					      <param name="CAPTION" value="運転停止">
+					      <param name="FONTSIZE" value="16">
+					      <param name="BTNCOLOR" value="White">
+					      <param name="APLCOLOR" value="Black">
+					      <param name="CONFIRM" value="1">
+					      <param name="LANGUAGE" value="0">
+					    </applet>
+		    		</td>
+		    		<td>
+		    		</td>
+		    	</tr>
+		    	<tr>
+		    		<td></td>
+		    		<td></td>
+		    		<td class="back">
+						<a href="#" onClick="movePage('menu.htm', min)">戻る</a>
+		    		</td>
+		       	</tr>
+			</table>
+		</div>
+	    <div id="foot">2015 &copy All rights reserved.</div>
+    </div>
+  </body>
+</html>

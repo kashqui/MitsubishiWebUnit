@@ -1,0 +1,112 @@
+body{
+    font-family: Meiryo, Arial, sans-serif;
+	font-size:16px;
+	line-height:150%;
+	background-color:#000;
+	margin-left:50px;
+}
+#content{
+	background-color:#DDD;
+	width:960px;
+	height:610px;
+}
+#inner{
+	background-color:#000;
+	width:950px;
+	height:575px;
+	margin:5px;
+}
+#top {
+	background-color:#DDD;
+}
+#foot {
+	color:#662;
+	text-align:center;
+	height:35px;
+}
+#icon{
+	padding-left:10px;
+	padding-top:10px;
+	vertical-align:top;
+}
+#subtitle{
+	color:#662;
+	padding-left:5px;
+	font-size:1em;
+}
+#title{
+	font-size:1.2em;
+	font-weight:bold;
+	color:#662;
+	padding-left:50px;
+}
+.cap{
+	color:#FFD;
+	padding-top:30px;
+	padding-left:20px;
+	padding-bottom:15px;
+}
+.work{
+	padding-left:10px;
+}
+.note{
+	padding-left:10px;
+}
+.ref{
+	width:180px;
+	height:70px;
+	padding-left:5px;
+	text-align:center;
+	font-size:1.4em;
+	line-height:100px;
+}
+.back{
+	width:80px;
+	height:50px;
+	text-align:center;
+	font-size:1em;
+	line-height:50px;
+}
+.ref a, .back a{
+	display:block;
+	width:100%;
+	height:100%;
+	background-color:#33F;
+}
+.semilong{
+	font-size:1.2em;
+}
+.long{
+	font-size:0.9em;
+}
+#content_tbl{
+	margin-left:80px;
+}
+.round_lamp{
+	width:50px;
+}
+.content_td{
+	width:160px;
+}
+.item{
+	color:#FFD;
+	background-color:#999;
+	text-align:center;
+}
+.lamp{
+	text-align:center;
+}
+.button{
+	padding-top:10px;
+	padding-left:10px;
+}
+a{
+	color:#FFA;
+	text-decoration:none;
+}
+a:visited{
+	color:#FFA;
+}
+.ref a:hover, .back a:hover{
+	background-color:#88D;
+}

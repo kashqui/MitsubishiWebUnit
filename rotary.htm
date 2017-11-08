@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta nameE="robots" contentT="noindex,nofollow">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+    <title>遠隔操作PCシステム</title>
+    <script type="text/javascript">
+<!--
+min=5;
+function init() {
+	var querys=location.search;
+	if(querys) {
+		var q = querys.replace(/^\?/,'').split('&');
+		for(i=0 ; i<q.length ; i++){
+			var pair=q[i].split('=');
+			min=pair[1];
+		}
+	}
+	backTimer(min);
+}
+window.onload= init;
+//-->
+	</script>
+  </head>
+  <body>
+  	<!-- 通信部品 -->
+	<applet code="WSCom.class" codebase="/PARTS/" width="0" height="0">
+    	<param name="INTERVAL" value="1">
+	</applet>
+  	<div id="content">
+  		<div id="inner">
+		    <table id="top">
+		    	<tr>
+		    		<td id="icon" width="120">
+		    			<img src="monitor_img/gaishi.png">
+		    		</td>
+		    		<td id="title" width="760">
+			    		<span id="subtitle">さいたま鉄道　目視検査装置制御盤</span><br>
+		    			<span id="title">遠隔操作PCシステム</span>
+		    		</td>
+		    		<td id="loco" width="150">
+		    			<img src="monitor_img/sl.png">
+		    		</td>
+		    	</tr>
+		    </table>
+		    <table id="content_tbl">
+		    	<tr>
+		    		<td colspan="11" class="cap">
+		    		    ■ ロータリーバルブ
+				    </td>
+				</tr>
+		    	<tr>
+		    		<td width="85" colspan="3" class="item">ロータリーバルブ3
+		    		</td>
+		    		<td width="85" colspan="3" class="item">ロータリーバルブ2
+		    		</td>
+		    		<td width="85" colspan="3" class="item">ロータリーバルブ1
+		    		</td>
+		    		<td></td>
+		    	</tr>
+		    	<tr>
+		    		<td class="lamp">
+		    		    <!-- 図形表示部品 -->
+					    <applet code="WSPictur.class" codebase="/PARTS/" width="78" height="44">
+					      <param name="TAGNO" value="1">
+					      <param name="ELMNO" value="18">
+					      <param name="DEFPICTURE" value="monitor_img/no_on.jpg">
+					      <param name="RANGENO" value="1">
+					      <param name="LOW1" value="1">
+					      <param name="HIGH1" value="2">
+					      <param name="PICTURE1" value="monitor_img/on.jpg">
+					      <param name="APLCOLOR" value="White">
+					    </applet>
+		    		</td>
+		    		<td class="lamp">
+		    		    <!-- 図形表示部品 -->
+					    <applet code="WSPictur.class" codebase="/PARTS/" width="78" height="44">
+					      <param name="TAGNO" value="1">
+					      <param name="ELMNO" value="19">
+					      <param name="DEFPICTURE" value="monitor_img/no_out.jpg">
+					      <param name="RANGENO" value="1">
+					      <param name="LOW1" value="1">
+					      <param name="HIGH1" value="2">
+					      <param name="PICTURE1" value="monitor_img/out.jpg">
+					      <param name="APLCOLOR" value="White">
+					    </applet>
+		    		</td>
+		    		<td class="lamp">
+		    		    <!-- 図形表示部品 -->
+					    <applet code="WSPictur.class" codebase="/PARTS/" width="78" height="44">
+					      <param name="TAGNO" value="1">
+					      <param name="ELMNO" value="18">
+					      <param name="DEFPICTURE" value="monitor_img/no_off.jpg">
+					      <param name="RANGENO" value="1">
+					      <param name="LOW1" value="-1">
+					      <param name="HIGH1" value="0">
+					      <param name="PICTURE1" value="monitor_img/off.jpg">
+					      <param name="APLCOLOR" value="White">
+					    </applet>
+		    		</td>
+		    		<td class="lamp">
+		    		    <!-- 図形表示部品 -->
+					    <applet code="WSPictur.class" codebase="/PARTS/" width="78" height="44">
+					      <param name="TAGNO" value="1">
+					      <param name="ELMNO" value="20">
+					      <param name="DEFPICTURE" value="monitor_img/no_on.jpg">
+					      <param name="RANGENO" value="1">
+					      <param name="LOW1" value="1">
+					      <param name="HIGH1" value="2">
+					      <param name="PICTURE1" value="monitor_img/on.jpg">
+					      <param name="APLCOLOR" value="White">
+					    </applet>
+		    		</td>
+		    		<td class="lamp">
+		    		    <!-- 図形表示部品 -->
+					    <applet code="WSPictur.class" codebase="/PARTS/" width="78" height="44">
+					      <param name="TAGNO" value="1">
+					      <param name="ELMNO" value="21">
+					      <param name="DEFPICTURE" value="monitor_img/no_out.jpg">
+					      <param name="RANGENO" value="1">
+					      <param name="LOW1" value="1">
+					      <param name="HIGH1" value="2">
+					      <param name="PICTURE1" value="monitor_img/out.jpg">
+					      <param name="APLCOLOR" value="White">
+					    </applet>
+		    		</td>
+		    		<td class="lamp">
+		    		    <!-- 図形表示部品 -->
+					    <applet code="WSPictur.class" codebase="/PARTS/" width="78" height="44">
+					      <param name="TAGNO" value="1">
+					      <param name="ELMNO" value="20">
+					      <param name="DEFPICTURE" value="monitor_img/no_off.jpg">
+					      <param name="RANGENO" value="1">
+					      <param name="LOW1" value="-1">
+					      <param name="HIGH1" value="0">
+					      <param name="PICTURE1" value="monitor_img/off.jpg">
+					      <param name="APLCOLOR" value="White">
+					    </applet>
+		    		</td>
+		    		<td class="lamp">
+		    		    <!-- 図形表示部品 -->
+					    <applet code="WSPictur.class" codebase="/PARTS/" width="78" height="44">
+					      <param name="TAGNO" value="1">
+					      <param name="ELMNO" value="22">
+					      <param name="DEFPICTURE" value="monitor_img/no_on.jpg">
+					      <param name="RANGENO" value="1">
+					      <param name="LOW1" value="1">
+					      <param name="HIGH1" value="2">
+					      <param name="PICTURE1" value="monitor_img/on.jpg">
+					      <param name="APLCOLOR" value="White">
+					    </applet>
+		    		</td>
+		    		<td class="lamp">
+		    		    <!-- 図形表示部品 -->
+					    <applet code="WSPictur.class" codebase="/PARTS/" width="78" height="44">
+					      <param name="TAGNO" value="1">
+					      <param name="ELMNO" value="23">
+					      <param name="DEFPICTURE" value="monitor_img/no_out.jpg">
+					      <param name="RANGENO" value="1">
+					      <param name="LOW1" value="1">
+					      <param name="HIGH1" value="2">
+					      <param name="PICTURE1" value="monitor_img/out.jpg">
+					      <param name="APLCOLOR" value="White">
+					    </applet>
+		    		</td>
+		    		<td class="lamp">
+		    		    <!-- 図形表示部品 -->
+					    <applet code="WSPictur.class" codebase="/PARTS/" width="78" height="44">
+					      <param name="TAGNO" value="1">
+					      <param name="ELMNO" value="22">
+					      <param name="DEFPICTURE" value="monitor_img/no_off.jpg">
+					      <param name="RANGENO" value="1">
+					      <param name="LOW1" value="-1">
+					      <param name="HIGH1" value="0">
+					      <param name="PICTURE1" value="monitor_img/off.jpg">
+					      <param name="APLCOLOR" value="White">
+					    </applet>
+		    		</td>
+		    		<td></td>
+		    	</tr>
+		    	<tr>
+		    		<td colspan="10">　</td>
+		    	</tr>
+		    	<tr>
+		    		<td colspan="9"></td>
+		    		<td class="back">
+						<a href="#" onClick="movePage('menu.htm', min)">戻る</a>
+		    		</td>
+		    	</tr>
+			</table>
+		</div>
+	    <div id="foot">2015 &copy All rights reserved.</div>
+    </div>
+  </body>
+</html>
